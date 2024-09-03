@@ -1,0 +1,759 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 12%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.header .img img {
+    height: 10%;
+    width: 25%;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 40px;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #088178;
+}
+.navbar a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.navbar a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: all 0.4s ease-out;
+}
+
+.navbar a:hover::after {
+    transform: scale(1);
+    transform-origin: bottom left;
+
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    padding: 20px 80px;
+    background-image: url(./hero4.png);
+    background-size: cover;
+    background-position: right(90px);
+}
+
+.hero .hero-left {
+    height: 100%;
+    width: 40%;
+    /* background-color: salmon; */
+}
+
+.hero .hero-left h4 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(20, 20, 20);
+    position: absolute;
+    margin-top: 240px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.hero .hero-left h2 {
+    font-size: 45px;
+    margin-top: 275px;
+    position: absolute;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero .hero-left h1 {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    color: #088178;
+    margin-top: 316px;
+    position: absolute;
+    padding: 10px;
+    letter-spacing: 1px; 
+}
+
+.hero .hero-left p {
+    font-size: 24px;
+    margin-top: 388px;
+    position: absolute;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: rgb(83, 78, 78);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero .hero-left button {
+    font-size: 20px;
+    margin-top: 445px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(184, 137, 132);
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition:  0.3s ease-in;
+}
+
+.hero .hero-left button:hover {
+    background-color: #088178;
+}
+
+.hero .hero-right {
+    height: 95%;
+    margin-top: 60px;
+    width: 60%;
+    /* background-image: url(./girl-removebg-preview\ \(1\).png); */
+    background-size: cover;
+    background-position: center;
+}
+
+.feature .fe-box {
+    width: 180px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px 15px;
+    font-size: 23px;
+    box-shadow: 0 0px 10px rgb(125, 122, 122);
+    border: 1px solid #6a8774;
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+
+.feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.feature .fe-box h6 {
+    padding: 9px 8px 9px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    display: inline-block;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+.feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.feature {
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+.feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+.feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+.feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+.feature .fe-box:nth-child(6) h6 {
+    background-color: #cdebbc;
+}
+
+.feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#product {
+    padding: 20px 80px;
+}
+
+.product1 {
+    text-align: center;
+}
+
+.product1 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.product1 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    color: rgb(83, 80, 80);
+    font-weight: 700;
+}
+
+.product1 .pro {
+    width: 23%;
+    margin-top: 80px;
+    min-width: 250px;
+    border-radius: 25px;
+    /* position: relative; */
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.2s ease;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    box-shadow: 0 0px 10px rgb(125, 122, 122);
+}
+
+.product1 .pro-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.product1 .pro .des span {
+    color: #606063;
+    margin-left: 122px;
+    font-size: 16px;
+}
+
+.product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 20px;
+}
+
+.product1 .pro .des h4 {
+    padding-top: 20px;
+    color: #088178;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.product1 .pro .des .star {
+    color: rgb(243, 181, 45);
+    padding-top: 6px;
+    text-align: center;
+}
+
+.product1 .pro .shop svg {
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    margin-top: -47px;
+    margin-left: 80px;
+    height: 40px;
+    border: 1px solid #cce7d0;
+    width: 40px;
+    line-height: 40px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+}
+
+#baner {
+    margin: 40px 0;
+    padding: 20px 80px;
+}
+
+.baner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./b2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    padding: 20px 80px;
+}
+
+.baner h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 7px;
+    color: #fff;
+}
+
+.baner h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.baner h2 span {
+    color: #ef3636;
+}
+
+.baner  .btn1 {
+    padding: 15px 30px ;
+    border-radius: 4px;
+    border: none;
+    transition: 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.baner .btn1:hover {
+    background-color: #088178;
+    color: white;
+}
+
+.sm-baner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#baner .baner-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./b17.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 30px;
+    min-width: 660px;
+    /* padding: 20px 80px; */
+}
+
+#baner .baner-box1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./b10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 30px;
+    min-width: 660px;
+    /* padding: 20px 80px; */
+}
+
+#baner .baner-box h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: rgb(255, 253, 253);
+    letter-spacing: 1px;
+    padding: 4px;
+    font-weight: 300;
+}
+
+#baner .baner-box h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: white;
+    padding: 3px;
+    font-weight: 800;
+}
+
+#baner .baner-box span {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#baner .baner-box .btn2 {
+    padding: 12px 18px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#baner .baner-box:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+
+#baner .baner-box1 h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: rgb(255, 253, 253);
+    letter-spacing: 1px;
+    padding: 4px;
+    font-weight: 300;
+}
+
+#baner .baner-box1 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: white;
+    padding: 3px;
+    font-weight: 800;
+}
+
+#baner .baner-box1 span {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#baner .baner-box1 .btn2 {
+    padding: 12px 18px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#baner .baner-box1:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+.baner3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    /* padding: 20px 80px; */
+    justify-content: space-between;
+}
+
+.baner3 .baner-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./b7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding: 20px;
+    min-width: 32%;
+    margin-bottom: 20px;
+}
+
+.baner3 .baner-box2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./b4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding: 20px;
+    min-width: 32%;
+    margin-bottom: 20px;
+}
+
+.baner3 .baner-box3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./b18.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding: 20px;
+    min-width: 32%;
+    margin-bottom: 20px;
+}
+
+.baner3 .baner-box3 h3 {
+    color: black;
+}
+.baner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 6px;
+    letter-spacing: 0.6px;
+}
+
+.baner3 h3 {
+    color: #ec544e;
+    padding: 3px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+    background-image: url(./b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    height: 30vh;
+    padding: 30px;
+    min-width: 660px;
+    /* padding: 20px 80px; */
+}
+
+.news .newstext h4 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 800;
+}
+
+.news .newstext p {
+    font-size: 20px;
+    padding-top: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(119, 102, 102);
+    font-weight: 800;
+}
+
+.news .newstext p span {
+    color: #ffbd27;
+}
+
+.news input {
+    height: 3.120rem;
+    padding: 1rem;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.news .form {
+    display: flex;
+    width: 40%;
+}
+.news .btn3 {
+    background-color: #088178;
+    padding:    4px 20px ;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.footer {
+    display: flex;
+    padding: 20px 80px ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer .coll .end {
+    height: 100px;
+    width: 100px;
+}
+
+
+.footer h4 {
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 0px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #606063;
+}
+
+.follow h4 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.follow .icon svg {
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: .3s ease;
+}
+
+.follow .icon svg:hover {
+    background-color: #088178;
+    color: white;
+    transform: translateY(-20px);
+}
+
+.col h4 {
+    margin-top: 40px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #606063;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    transition: .3s;
+}
+
+.col a:hover {
+    color: #088178;
+    transform: translateX(20px);
+}
+
+.footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+    padding-top: 3px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+.footer .copyright {
+    width: 100%;
+    height: 5vh;
+    /* background-color: #606063; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width:799px) {
+    .navbar {
+        display: flex;
+        margin-top: 60px;
+        margin-inline: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        padding: 80px 0 0 10px;
+        right: 0;
+        height: 90vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.07);
+    }
+}
